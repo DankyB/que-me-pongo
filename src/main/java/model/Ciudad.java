@@ -1,7 +1,7 @@
 package model;
 
-import model.Clima.Clima;
-import model.Clima.ClimaService;
+import model.clima.Clima;
+import model.clima.ClimaService;
 
 import java.util.List;
 import java.util.Map;
