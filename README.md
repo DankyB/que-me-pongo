@@ -1,4 +1,4 @@
-# Qué Me Pongo - Segunda iteración
+# Qué Me Pongo - Tercera iteración
 
 ## Diagrama de clases
 
