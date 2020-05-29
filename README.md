@@ -2,5 +2,5 @@
 
 ## Diagrama de clases
 
-![diagrama de clases](https://i.imgur.com/EBPV161.png)
+![diagrama de clases](https://i.imgur.com/8LPZWJa.png)
 
