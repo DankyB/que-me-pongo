@@ -1,10 +1,12 @@
 package model.clima;
 
 public class Magnitud {
-    public String unidad;
-    public Float valor;
+    //TODO: handle unit conversion?
 
-    public void Magnitud(Float valor, String unidad){
+    public String unidad;
+    public double valor;
+
+    public Magnitud(double valor, String unidad){
         this.unidad = unidad;
         this.valor = valor;
     }

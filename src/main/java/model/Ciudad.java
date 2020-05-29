@@ -8,10 +8,10 @@ import java.util.Map;
 
 public class Ciudad {
     private String nombre;
-    private Clima clima;
+    public Clima clima;
     private ClimaService climaService;
 
-    public void Ciudad(String nombre){
+    public Ciudad(String nombre){
         this.nombre = nombre;
     }
 

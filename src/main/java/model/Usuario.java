@@ -1,6 +1,7 @@
 package model;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Usuario {
     private String nombre;
@@ -18,7 +19,14 @@ public class Usuario {
     }
 
     public List<Outfit> generarSugerencias(){
-        //TODO: (ropa,{ciudad:clima}) => [outfits]
+        //TODO: this.getPrendasAptas() => [outfits]
         return null;
+    }
+
+    public List<Prenda> getPrendasAptas(){
+        return this.ropa.stream()
+                .filter( prenda -> this.ciudad.clima.temperatura.valor <= prenda.temperaturaMaxima.valor )
+                .collect(Collectors.toList());
+
     }
 }

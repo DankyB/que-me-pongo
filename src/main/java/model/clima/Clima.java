@@ -4,7 +4,7 @@ public class Clima {
     public Magnitud temperatura;
     public Magnitud probabilidadPrecipitaciones;
 
-    public void Clima(Magnitud temperatura, Magnitud precipitaciones){
+    public Clima(Magnitud temperatura, Magnitud precipitaciones){
         this.temperatura = temperatura;
         this.probabilidadPrecipitaciones = precipitaciones;
     }

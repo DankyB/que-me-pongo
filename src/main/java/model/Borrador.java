@@ -1,5 +1,7 @@
 package model;
 
+import model.clima.Magnitud;
+
 import static java.util.Objects.requireNonNull;
 
 public class Borrador {
@@ -8,7 +10,8 @@ public class Borrador {
     private Color colorPrimario;
     private Color colorSecundario;
 	private Trama trama = Trama.LISA;
-	
+	private Magnitud temperaturaMaxima = new Magnitud(20.0,"°C");
+
 	public Borrador(TipoPrenda tipoPrenda) {
 		this.tipoPrenda = requireNonNull(tipoPrenda, "tipo prenda es obligatorio");
 	}
@@ -37,6 +40,6 @@ public class Borrador {
 		if(material == null || colorPrimario == null)
 			throw new NullPointerException("Falta algún campo obligatorio");
 		
-		return new Prenda(tipoPrenda, material, colorPrimario, colorSecundario, trama);
+		return new Prenda(tipoPrenda, material, colorPrimario, colorSecundario, trama, temperaturaMaxima);
 	}
 }
